@@ -1,0 +1,48 @@
+/* Font StyleSheet*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*The box-sizing property allows us to include the padding and border in an element's total width and height*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 1000;
+    color: red;
+    width: 0ch;
+    /*character*/
+    white-space: nowrap;
+    /*It puts all the content in same line*/
+    overflow: hidden;
+    /* It Hide the nowrap contact*/
+    border-right: 1px solid white;
+    animation: Typing 7s steps(20) infinite;
+    /*Steps is used for Typing Efforts*/
+
+}
+
+@keyframes Typing {
+    0% {
+        width: 0ch;
+        /*Starting of Typing*/
+    }
+
+    50% {
+        width: 10ch;
+        /* 50% of Typing*/
+    }
+}
